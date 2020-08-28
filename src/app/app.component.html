@@ -1,0 +1,6 @@
+<form [formGroup]="fg">
+  <input formControlName="amount" placeholder="amount">
+  <div *ngIf="fg.errors && fg.errors['dependentRequiredError'] === 'amount'">Must Enter A Value</div>
+  <input formControlName="periodCode" placeholder="periodCode">
+  <div *ngIf="fg.errors && fg.errors['dependentRequiredError'] === 'periodCode'">Must Enter A Value</div>
+</form>
